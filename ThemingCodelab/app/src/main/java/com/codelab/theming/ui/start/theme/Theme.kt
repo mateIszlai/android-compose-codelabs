@@ -22,6 +22,7 @@ fun JetNewsTheme(
     MaterialTheme(
         content = content,
         colors = LightColors,
-        typography = JetnewsTypography
+        typography = JetnewsTypography,
+        shapes = JetnewsShapes
     )
 }
