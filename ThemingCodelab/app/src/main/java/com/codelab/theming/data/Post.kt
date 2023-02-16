@@ -59,7 +59,10 @@ object PostRepo {
 
 private val pietro = PostAuthor("Pietro Maggi", "https://medium.com/@pmaggi")
 private val manuel = PostAuthor("Manuel Vivo", "https://medium.com/@manuelvicnt")
-private val florina = PostAuthor("Florina Muntenescu", "https://medium.com/@florina.muntenescu")
+private val florina = PostAuthor(
+    "Florina Muntenescu",
+    "https://medium.com/@florina.muntenescu"
+)
 private val jose = PostAuthor("Jose Alcérreca", "https://medium.com/@JoseAlcerreca")
 
 private val post1 = Post(
@@ -80,8 +83,10 @@ private val post1 = Post(
 private val post2 = Post(
     id = 2L,
     title = "Dagger in Kotlin: Gotchas and Optimizations",
-    subtitle = "Use Dagger in Kotlin! This article includes best practices to optimize your build time and gotchas you might encounter.",
-    url = "https://medium.com/androiddevelopers/dagger-in-kotlin-gotchas-and-optimizations-7446d8dfd7dc",
+    subtitle = "Use Dagger in Kotlin! This article includes best practices to optimize your " +
+        "build time and gotchas you might encounter.",
+    url = "https://medium.com/androiddevelopers/dagger-in-kotlin-gotchas-and-" +
+        "optimizations-7446d8dfd7dc",
     metadata = Metadata(
         author = manuel,
         date = "July 30",
@@ -95,8 +100,10 @@ private val post2 = Post(
 private val post3 = Post(
     id = 3L,
     title = "From Java Programming Language to Kotlin — the idiomatic way",
-    subtitle = "Learn how to get started converting Java Programming Language code to Kotlin, making it more idiomatic and avoid common pitfalls, by…",
-    url = "https://medium.com/androiddevelopers/from-java-programming-language-to-kotlin-the-idiomatic-way-ac552dcc1741",
+    subtitle = "Learn how to get started converting Java Programming Language code " +
+        "to Kotlin, making it more idiomatic and avoid common pitfalls, by…",
+    url = "https://medium.com/androiddevelopers/from-java-programming-language-to-" +
+        "kotlin-the-idiomatic-way-ac552dcc1741",
     metadata = Metadata(
         author = florina,
         date = "July 09",
@@ -111,7 +118,8 @@ private val post4 = Post(
     id = 4L,
     title = "Locale changes and the AndroidViewModel antipattern",
     subtitle = "TL;DR: Expose resource IDs from ViewModels to avoid showing obsolete data.",
-    url = "https://medium.com/androiddevelopers/locale-changes-and-the-androidviewmodel-antipattern-84eb677660d9",
+    url = "https://medium.com/androiddevelopers/locale-changes-and-the-androidviewmodel" +
+        "-antipattern-84eb677660d9",
     metadata = Metadata(
         author = jose,
         date = "April 02",
@@ -125,7 +133,8 @@ private val post4 = Post(
 private val post5 = Post(
     id = 5L,
     title = "Collections and sequences in Kotlin",
-    subtitle = "Working with collections is a common task and the Kotlin Standard Library offers many great utility functions. It also offers two ways of…",
+    subtitle = "Working with collections is a common task and the Kotlin Standard Library" +
+        " offers many great utility functions. It also offers two ways of…",
     url = "https://medium.com/androiddevelopers/collections-and-sequences-in-kotlin-55db18283aca",
     metadata = Metadata(
         author = florina,
