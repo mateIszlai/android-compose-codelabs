@@ -54,6 +54,7 @@ import androidx.compose.ui.unit.dp
 import com.codelab.theming.R
 import com.codelab.theming.data.Post
 import com.codelab.theming.data.PostRepo
+import com.codelab.theming.ui.finish.theme.JetnewsTheme
 import com.codelab.theming.ui.start.theme.JetNewsTheme
 import java.util.Locale
 
@@ -221,6 +222,15 @@ private fun PostItemPreview() {
 private fun FeaturedPostPreview() {
     val post = remember { PostRepo.getFeaturedPost() }
     JetNewsTheme {
+        FeaturedPost(post = post)
+    }
+}
+
+@Preview("Featured Post • Dark")
+@Composable
+private fun FeaturedPostDarkPreview() {
+    val post = remember { PostRepo.getFeaturedPost() }
+    JetnewsTheme(darkTheme = true) {
         FeaturedPost(post = post)
     }
 }
