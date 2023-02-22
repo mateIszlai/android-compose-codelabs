@@ -34,13 +34,13 @@ import com.google.android.libraries.maps.model.CameraPosition
 import com.google.android.libraries.maps.model.LatLng
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
 import java.util.concurrent.CountDownLatch
 import javax.inject.Inject
 import kotlin.math.pow
 import kotlin.math.round
+import org.junit.Before
+import org.junit.Rule
+import org.junit.Test
 
 @HiltAndroidTest
 class DetailsActivityTest {
