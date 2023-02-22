@@ -42,7 +42,7 @@ fun LandingScreen(modifier: Modifier = Modifier, onTimeout: () -> Unit) {
             currentOnTimeout()
         }
 
-        // TODO: Make LandingScreen disappear after loading data
+
         Image(painterResource(id = R.drawable.ic_crane_drawer), contentDescription = null)
     }
 }
