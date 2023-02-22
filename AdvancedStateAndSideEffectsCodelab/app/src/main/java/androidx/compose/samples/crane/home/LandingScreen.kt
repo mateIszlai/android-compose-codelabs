@@ -42,7 +42,6 @@ fun LandingScreen(modifier: Modifier = Modifier, onTimeout: () -> Unit) {
             currentOnTimeout()
         }
 
-
         Image(painterResource(id = R.drawable.ic_crane_drawer), contentDescription = null)
     }
 }
