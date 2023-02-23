@@ -96,7 +96,8 @@ private fun BaseRow(
             .height(68.dp)
             .clearAndSetSemantics {
                 contentDescription =
-                    "$title account ending in ${subtitle.takeLast(4)}, current balance $dollarSign$formattedAmount"
+                    "$title account ending in ${subtitle.takeLast(4)}, " +
+                    "current balance $dollarSign$formattedAmount"
             },
         verticalAlignment = Alignment.CenterVertically
     ) {
